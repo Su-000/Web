@@ -1,0 +1,114 @@
+/* إعدادات عامة */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(45deg, #56CCF2, #2F80ED);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.textbox {
+  margin: 15px 0;
+  position: relative;
+}
+
+.textbox input {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease-in-out;
+}
+
+.textbox input:focus {
+  border-color: #56CCF2;
+  background-color: #e9f7ff;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #56CCF2;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #2F80ED;
+}
+
+.remember-me {
+  margin: 15px 0;
+  text-align: left;
+}
+
+.remember-me input {
+  margin-right: 5px;
+}
+
+.extra-links a {
+  display: block;
+  margin-top: 10px;
+  color: #56CCF2;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.extra-links a:hover {
+  text-decoration: underline;
+}
+
+/* تأثيرات التحريك */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* التحسينات للأجهزة الصغيرة */
+@media screen and (max-width: 600px) {
+  .login-box {
+    width: 90%;
+  }
+}
